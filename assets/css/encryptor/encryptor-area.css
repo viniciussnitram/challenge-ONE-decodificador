@@ -1,6 +1,9 @@
 .encryptor__area {
     background-color: var(--light-blue-200);
-    border: none;
+    border: 1px solid red;
+    color: var(--dark-blue-300);
     font-size: 32px;
+    font-weight: 400;
+    margin-top: 60px;
     resize: none;
 }
