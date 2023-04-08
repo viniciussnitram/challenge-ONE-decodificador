@@ -1,9 +1,16 @@
 .encryptor__area {
     background-color: var(--light-blue-200);
-    border: 1px solid red;
+    border: none;
     color: var(--dark-blue-300);
     font-size: 32px;
     font-weight: 400;
+    height: 300px;
     margin-top: 60px;
+    outline: none;
     resize: none;
+    width: 353px;
+}
+
+.encryptor__area::placeholder {
+    color: var(--dark-blue-300);
 }

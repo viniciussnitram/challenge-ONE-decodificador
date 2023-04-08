@@ -1,0 +1,31 @@
+.encryptor__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.encryptor__buttons--encrypt {
+    background-color: var(--dark-blue-300);
+    border-radius: 20px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    height: 67px;
+    outline: none;
+}
+
+.encryptor__buttons--decrypt {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+    font-size: 16px;
+    font-weight: 500;
+    height: 67px;
+    outline: none;
+}
+
+.encryptor__buttons--encrypt:hover, .encryptor__buttons--decrypt:hover {
+    cursor: pointer;
+}
