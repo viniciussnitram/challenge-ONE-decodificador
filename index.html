@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FONTS GOOGLE - INTER -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/encryptor/encryptor-area.css">
     <link rel="stylesheet" href="assets/css/encryptor/encryptor-warnings.css">
@@ -23,7 +27,7 @@
             <img class="encryptor__image" src="assets/img/logo.png" alt="Logo Alura">
         </header>
         <section class="encryptor">
-            <textarea id="encryptor-area" class="encryptor__area" name="encryptor-area" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+            <textarea id="encryptor-area" class="encryptor__area" name="encryptor-area" data-encryptor-area cols="30" rows="10" placeholder="Digite seu texto"></textarea>
             <div class="encryptor__warnings">
                 <img class="encryptor__warnings--image" src="assets/img/warning.png" alt="Warning Icon">
                 <p class="encryptor__warnings--phrase">Apenas letras minúsculas e sem acento.</p>
@@ -33,10 +37,11 @@
                 <input class="encryptor__buttons--decrypt" type="submit" value="Descriptografar">
             </div>
         </section>
-        <section class="decryptor">
-            <h3 class="decryptor__title">Nenhuma mensagem encontrada</h3>
-            <p class="decryptor__description">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <section class="decryptor" data-decryptor>
+            <h3 class="decryptor__title" data-decryptor-title>Nenhuma mensagem encontrada</h3>
+            <p class="decryptor__description" data-decryptor-description>Digite um texto que você deseja criptografar ou descriptografar.</p>
         </section>
     </main>
+    <script src="/js/main.js"></script>
 </body>
 </html>
