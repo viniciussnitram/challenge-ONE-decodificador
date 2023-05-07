@@ -1,12 +1,11 @@
 let encryptorArea = document.querySelector('[data-encryptor-area]');
-let decryptor = document.querySelector('[data-decryptor]');
+let decryptorDescription = document.querySelector('[data-decryptor-description]');
 let btnEncrypt = document.querySelector('[data-btn-encrypt]');
 let btnDecrypt = document.querySelector('[data-btn-decrypt]');
 
-
 btnEncrypt.addEventListener('click', () => {
     const encryptText = encrypt(encryptorArea.value);
-    decryptor.textContent = encryptText;
+    decryptorDescription.textContent = encryptText;
     encryptorArea.value = "";
 })
 

@@ -16,10 +16,14 @@
     --gray-500: #343A40;
 }
 
-body {
-    background-color: var(--light-blue-200);
+* {
+    background-color: #E5E5E5;
+    line-height: 150%;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
 }
 
-* {
-    font-family: 'Inter', sans-serif;
+.logo {
+    margin-left: 10px;
 }

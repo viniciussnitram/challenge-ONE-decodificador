@@ -19,18 +19,19 @@
     <link rel="stylesheet" href="assets/css/decryptor/decryptor.css">
     <link rel="stylesheet" href="assets/css/decryptor/decryptor-title.css">
     <link rel="stylesheet" href="assets/css/decryptor/decryptor-description.css">
+    <link rel="stylesheet" href="assets/css/decryptor/decryptor-button.css">
     <title>ONE - Decodificador</title>
 </head>
 <body>
     <main>
         <header>
-            <img class="encryptor__image" src="assets/img/logo.png" alt="Logo Alura">
+            <img class="logo" src="assets/img/logo.png" alt="Logo Da Alura">
         </header>
         <section class="encryptor">
-            <textarea id="encryptor-area" class="encryptor__area" name="encryptor-area" data-encryptor-area cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+            <textarea class="encryptor__area" cols="41" rows="4" placeholder="Digite seu texto" data-encryptor-area></textarea>
             <div class="encryptor__warnings">
                 <img class="encryptor__warnings--image" src="assets/img/warning.png" alt="Warning Icon">
-                <p class="encryptor__warnings--phrase">Apenas letras minúsculas e sem acento.</p>
+                <h6 class="encryptor__warnings--phrase">Apenas letras minúsculas e sem acento.</h6>
             </div>
             <div class="encryptor__buttons">
                 <input class="encryptor__buttons--encrypt" type="submit" value="Criptografar" data-btn-encrypt>
@@ -38,8 +39,10 @@
             </div>
         </section>
         <section class="decryptor" data-decryptor>
+            <textarea class="decryptor__description" cols="41" rows="4" data-decryptor-description placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+            <button class="decryptor__button--copy"></button>
             <h3 class="decryptor__title" data-decryptor-title>Nenhuma mensagem encontrada</h3>
-            <p class="decryptor__description" data-decryptor-description>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <input class="decryptor__button" type="submit" value="Copiar">
         </section>
     </main>
     <script src="/js/main.js"></script>
